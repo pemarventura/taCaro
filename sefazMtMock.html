@@ -1,0 +1,1007 @@
+    open('/nfce/consultanfce?pagn=impressao&tagSolicitada=9&tpImp=DANFE', 'Resumo', 'top=0,left=0,width=760,height=600,scrollbars=1,resizable=1');
+          }
+          
+          function paginaInicial()
+          {
+              window.open('/nfce/consultanfce', '_self');
+          }
+
+          function desabilitaBotoes()
+          {
+              //Desabilitando bot�es, caso valida��o ocorra com sucesso
+              desabilitarBotoes(obterArrayBotoes(form));
+              return true;
+          }
+
+          function obterArrayBotoes(form)
+          {
+              //Obtendo os bot�es a serem desabilitados
+              var botao1 = form.bttnNovaConsulta;
+              var botao2 = form.bttnCancelar;
+              var botao3 = form.btnImpressaoUso;
+              var botao4 = form.bttnImprimir;
+              //Retorna um Array com os bot�es que devem ser desabilitados
+              return new Array(botao1, botao2, botao3, botao4);
+          }
+          window.onload = function ()
+          {
+              document.form.onsubmit = function ()
+              {
+                  desabilitaBotoes();
+              }
+          }
+        </script>
+    </head>
+    <body>
+        <form name='form' action='/nfce/consultanfce' method='POST'>
+            <input type='hidden' name='ret' value='1'/>
+            <input type='hidden' name='pagn'/>
+            <div style="text-align:center; position: relative; display: block;z-index: 50;">
+                
+                <br/>
+                <div style="width: 100%!;(MISSING)">
+                    <table class="SEFAZ-TABLE-Moldura" width="50%!"(MISSING) align="center" cellspacing="0" cellpadding="2px" border="0">
+                        <tr class="SEFAZ-TR-SubTitulo" valign="middle">
+                            <td align="left">
+                                <input type="button" value="Imprimir NFC-e" class="SEFAZ-INPUT-Botao" name="bttnImprimir" onclick="javaScript: paginaImpressao();"/>                                 
+                                <input type="button" value="Nova Consulta" class="SEFAZ-INPUT-Botao" name="bttnNovaConsulta" onclick="javaScript: paginaInicial();"/>                                                                                
+                                <input type="button" value="Voltar" class="SEFAZ-INPUT-Botao" onclick='javascript:history.go(-1);' name="bttnCancelar"/>
+                               
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
+        <div>
+            <div data-role="header" xmlns:chave="http://exslt.org/chaveacesso" xmlns:r="http://www.serpro.gov.br/nfe/remessanfe.xsd" xmlns:n="http://www.portalfiscal.inf.br/nfe">
+<h1 class="tit">
+<img src="imagem/NFCe_vertical_semDescricao.png" width="90" height="64" alt="NFC-e"><p>DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR ELETR�NICA</p>
+<p></p>
+</h1>
+</div><div data-role="content">
+<div id="conteudo">
+<div id="avisos"></div>
+<div class="txtCenter">
+<div id="u20" class="txtTopo">SENDAS DISTRIBUIDORA S/A</div>
+<div class="text">
+                                                                CNPJ:
+                                                                06.057.223/0557-40</div>
+<div class="text">AV MIGUEL SUTIL
+                                                        ,
+                                                        9100
+                                                        ,
+
+                                                        ,
+                                                        Santa Rosa
+                                                        ,
+                                                        Cuiaba
+                                                        ,
+                                                        MT</div>
+</div>
+<table border="0" align="center" cellpadding="0" cellspacing="0" id="tabResult" data-filter="true">
+<tr id="Item + 1">
+<td valign="top"><span class="txtTit">LAS SEARA 1kg BOLONH</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1028983
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                24,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">24,90</span></td>
+</tr>
+<tr id="Item + 2">
+<td valign="top"><span class="txtTit">PATINHO BOV FC kg</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1141933
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>2,064</span><span class="RUN"><strong>UN: </strong>Kg</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                48,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">100,92</span></td>
+</tr>
+<tr id="Item + 3">
+<td valign="top"><span class="txtTit">LAS SEARA 1kg BOLONH</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1028983
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                24,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">24,90</span></td>
+</tr>
+<tr id="Item + 4">
+<td valign="top"><span class="txtTit">SELETA QUERO 170G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1115195
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,79</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,79</span></td>
+</tr>
+<tr id="Item + 5">
+<td valign="top"><span class="txtTit">ATUM RAL 88 140G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1118552
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                7,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">7,49</span></td>
+</tr>
+<tr id="Item + 6">
+<td valign="top"><span class="txtTit">SELETA QUERO 170G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1115195
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,79</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,79</span></td>
+</tr>
+<tr id="Item + 7">
+<td valign="top"><span class="txtTit">ATUM 88 SOL NAT 140G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1124362
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                10,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">10,90</span></td>
+</tr>
+<tr id="Item + 8">
+<td valign="top"><span class="txtTit">ATUM 88 SOL NAT 140G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1124362
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                10,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">10,90</span></td>
+</tr>
+<tr id="Item + 9">
+<td valign="top"><span class="txtTit">ATUM 88 SOL NAT 140G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1124362
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                10,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">10,90</span></td>
+</tr>
+<tr id="Item + 10">
+<td valign="top"><span class="txtTit">ATUM RAL 88 140G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1118552
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                7,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">7,49</span></td>
+</tr>
+<tr id="Item + 11">
+<td valign="top"><span class="txtTit">ATUM RAL 88 140G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1118552
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                7,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">7,49</span></td>
+</tr>
+<tr id="Item + 12">
+<td valign="top"><span class="txtTit">MAND CONG 1kg</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1213379
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>PC</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                8,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">8,49</span></td>
+</tr>
+<tr id="Item + 13">
+<td valign="top"><span class="txtTit">SELETA QUERO 170G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1115195
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,79</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,79</span></td>
+</tr>
+<tr id="Item + 14">
+<td valign="top"><span class="txtTit">F PEITO SADIA BJ 1kg</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                3749
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>3</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                21,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">65,70</span></td>
+</tr>
+<tr id="Item + 15">
+<td valign="top"><span class="txtTit">ALFACE CRESPA</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                3741
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>PC</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                3,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">3,49</span></td>
+</tr>
+<tr id="Item + 16">
+<td valign="top"><span class="txtTit">MORT SADILAR 1kg</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                81828
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                13,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">13,90</span></td>
+</tr>
+<tr id="Item + 17">
+<td valign="top"><span class="txtTit">COCA COLA S/AC 500ML</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                81868
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>18</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,29</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">77,22</span></td>
+</tr>
+<tr id="Item + 18">
+<td valign="top"><span class="txtTit">SCOXA SEARA 1kg</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                74793
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>PC</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                11,79</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">11,79</span></td>
+</tr>
+<tr id="Item + 19">
+<td valign="top"><span class="txtTit">SALG ARR KOD 70G CEB</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1165882
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,09</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,09</span></td>
+</tr>
+<tr id="Item + 20">
+<td valign="top"><span class="txtTit">SALG ARR KOD 70G CEB</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1165882
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,09</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,09</span></td>
+</tr>
+<tr id="Item + 21">
+<td valign="top"><span class="txtTit">CHIPS ARR/MI KOD 70G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1162896
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,09</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,09</span></td>
+</tr>
+<tr id="Item + 22">
+<td valign="top"><span class="txtTit">AG PURISSI C/G 500ML</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                99029
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>24</span><span class="RUN"><strong>UN: </strong>Gf</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                2,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">59,76</span></td>
+</tr>
+<tr id="Item + 23">
+<td valign="top"><span class="txtTit">AMAC BABY 5L SEDUTOR</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1025406
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Fr</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                18,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">18,90</span></td>
+</tr>
+<tr id="Item + 24">
+<td valign="top"><span class="txtTit">SALG ARR KOD 70G CEB</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1165882
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,09</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,09</span></td>
+</tr>
+<tr id="Item + 25">
+<td valign="top"><span class="txtTit">CHIPS ARR/MI KOD 70G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1162896
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,09</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,09</span></td>
+</tr>
+<tr id="Item + 26">
+<td valign="top"><span class="txtTit">CHIPS ARR/MI KOD 70G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1162896
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,09</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,09</span></td>
+</tr>
+<tr id="Item + 27">
+<td valign="top"><span class="txtTit">PAO F WICKB INT 450G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1028468
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                10,95</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">10,95</span></td>
+</tr>
+<tr id="Item + 28">
+<td valign="top"><span class="txtTit">SH CLEAR 400ML LPROF</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1027951
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                30,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">30,90</span></td>
+</tr>
+<tr id="Item + 29">
+<td valign="top"><span class="txtTit">VARAL NYLON ASA BR</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1135795
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                3,8</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">3,80</span></td>
+</tr>
+<tr id="Item + 30">
+<td valign="top"><span class="txtTit">PALHA AMARE 400G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                80293
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>PC</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                17,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">17,90</span></td>
+</tr>
+<tr id="Item + 31">
+<td valign="top"><span class="txtTit">BAT LAYS 68G RUS SAL</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1185752
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                13,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">13,90</span></td>
+</tr>
+<tr id="Item + 32">
+<td valign="top"><span class="txtTit">BIS OREO 270G LV+PG-</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1083974
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                8,99</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">8,99</span></td>
+</tr>
+<tr id="Item + 33">
+<td valign="top"><span class="txtTit">T MEU SEG 49G ALH CE</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1146307
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                3,95</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">3,95</span></td>
+</tr>
+<tr id="Item + 34">
+<td valign="top"><span class="txtTit">PIRAQUE PRESUNT 100G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                62823
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,79</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,79</span></td>
+</tr>
+<tr id="Item + 35">
+<td valign="top"><span class="txtTit">T MEU SEGR 49G C VER</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1146314
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                3,95</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">3,95</span></td>
+</tr>
+<tr id="Item + 36">
+<td valign="top"><span class="txtTit">GRANO NATURA 1kg LIG</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                100492
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                14,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">14,90</span></td>
+</tr>
+<tr id="Item + 37">
+<td valign="top"><span class="txtTit">CLUB SOCIAL 141G CEB</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1155094
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,69</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,69</span></td>
+</tr>
+<tr id="Item + 38">
+<td valign="top"><span class="txtTit">PIRAQUE PRESUNT 100G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                62823
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,79</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,79</span></td>
+</tr>
+<tr id="Item + 39">
+<td valign="top"><span class="txtTit">BISC A/S RENATA 360G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1103545
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                5,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">5,49</span></td>
+</tr>
+<tr id="Item + 40">
+<td valign="top"><span class="txtTit">PREND ROUP FIAT C/12</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1099972
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                6,48</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">6,48</span></td>
+</tr>
+<tr id="Item + 41">
+<td valign="top"><span class="txtTit">CAF MELITTA 250G SUL</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1147662
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                22,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">22,90</span></td>
+</tr>
+<tr id="Item + 42">
+<td valign="top"><span class="txtTit">CROCANT 40G QJO/CEB</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                75501
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,39</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,39</span></td>
+</tr>
+<tr id="Item + 43">
+<td valign="top"><span class="txtTit">CROCANT 40G PERU/REQ</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                94260
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,39</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,39</span></td>
+</tr>
+<tr id="Item + 44">
+<td valign="top"><span class="txtTit">WHISKAS ANT PELO 80G</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1187636
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                15,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">15,49</span></td>
+</tr>
+<tr id="Item + 45">
+<td valign="top"><span class="txtTit">POPCOR YOKI 100G MAN</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                9874
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                5,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">5,49</span></td>
+</tr>
+<tr id="Item + 46">
+<td valign="top"><span class="txtTit">POPCOR YOKI 100G MAN</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                9874
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                5,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">5,49</span></td>
+</tr>
+<tr id="Item + 47">
+<td valign="top"><span class="txtTit">CAF MELITTA 250G CER</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1147659
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                22,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">22,90</span></td>
+</tr>
+<tr id="Item + 48">
+<td valign="top"><span class="txtTit">CAF MELITTA 250G MOG</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1147661
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                22,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">22,90</span></td>
+</tr>
+<tr id="Item + 49">
+<td valign="top"><span class="txtTit">JELLY 85G FILH CARNE</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1042500
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                2,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">2,49</span></td>
+</tr>
+<tr id="Item + 50">
+<td valign="top"><span class="txtTit">CHA LEAO 16G CAMOMIL</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1136020
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                12,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">12,90</span></td>
+</tr>
+<tr id="Item + 51">
+<td valign="top"><span class="txtTit">PIM DE CHEIRO kg</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                61911
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>0,05</span><span class="RUN"><strong>UN: </strong>Kg</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                25,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">1,29</span></td>
+</tr>
+<tr id="Item + 52">
+<td valign="top"><span class="txtTit">POPCOR YOKI 100G MAN</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                9874
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                5,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">5,49</span></td>
+</tr>
+<tr id="Item + 53">
+<td valign="top"><span class="txtTit">FAROFA YOKI 400G TRA</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1187448
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>PC</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                12,5</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">12,50</span></td>
+</tr>
+<tr id="Item + 54">
+<td valign="top"><span class="txtTit">PH NEVE FT LV12 PG11</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1096756
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                24,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">24,90</span></td>
+</tr>
+<tr id="Item + 55">
+<td valign="top"><span class="txtTit">CHA LEAO 16G 10SQ</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1166648
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                12,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">12,90</span></td>
+</tr>
+<tr id="Item + 56">
+<td valign="top"><span class="txtTit">JELLY 85G FILH CARNE</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1042500
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                2,49</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">2,49</span></td>
+</tr>
+<tr id="Item + 57">
+<td valign="top"><span class="txtTit">M PIM MEND 215ML SVE</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1170247
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                18,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">18,90</span></td>
+</tr>
+<tr id="Item + 58">
+<td valign="top"><span class="txtTit">CROCANT 40G SALAM/LI</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1027282
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                4,39</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">4,39</span></td>
+</tr>
+<tr id="Item + 59">
+<td valign="top"><span class="txtTit">GELE QUEEN 320G FR V</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                1027625
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                19,9</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">19,90</span></td>
+</tr>
+<tr id="Item + 60">
+<td valign="top"><span class="txtTit">DEL VALLE M 1LT LAR</span><span class="RCod">
+                                                                                (C�digo:
+                                                                                6406
+                                                                                )
+                                                                        </span>
+<br>
+<span class="Rqtd"><strong>Qtde.:</strong>6</span><span class="RUN"><strong>UN: </strong>Un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>
+                                                                                &nbsp;
+                                                                                8,99</span></td><td align="right" valign="top" class="txtTit noWrap">
+                                                                        Vl. Total
+                                                                        <br>
+<span class="valor">53,94</span></td>
+</tr>
+</table>
+<div id="totalNota" class="txtRight">
+<div id="linhaTotal">
+<label>Qtd. total de itens:</label><span class="totalNumb">60</span>
+</div>
+<div id="linhaTotal">
+<label>Valor total R$:</label><span class="totalNumb">915,57</span>
+</div>
+<div id="linhaTotal">
+<label>Descontos R$:</label><span class="totalNumb">10,50</span>
+</div>
+<div id="linhaTotal" class="linhaShade">
+<label>Valor a pagar R$:</label><span class="totalNumb txtMax">905,07</span>
+</div>
+<div id="linhaForma">
+<label>Forma de pagamento:</label><span class="totalNumb txtTitR">Valor pago R$:</span>
+</div>
+<div id="linhaTotal">
+<label class="tx">
+                                                                                        Cart�o de D�bito
+                                                                                </label><span class="totalNumb">905,07</span>
+</div>
+<div id="linhaTotal">
+<label class="tx">Troco </label><span class="totalNumb">NaN</span>
+</div>
+<div id="linhaTotal" class="spcTop">
+<label class="txtObs">Informa��o dos Tributos Totais Incidentes
+                                                                        (Lei Federal 12.741/2012)&nbsp;R$</label><span class="totalNumb txtObs">84,20</span>
+</div>
+</div>
+</div>
+<div id="infos" class="txtCenter">
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-collapsed="false">
+<h4>Informa��es gerais da Nota</h4>
+<ul data-role="listview" data-inset="false">
+<li>
+<strong>EMISS�O NORMAL</strong>
+<br>
+<br>
+<strong>N�mero: </strong>23464<strong> S�rie: </strong>19<strong> Emiss�o: </strong>03/03/2025 13:24:02
+                                                                - Via Consumidor
+                                                                <br>
+<br>
+<strong>Protocolo de Autoriza��o: </strong>151250117448664       03/03/2025 13:24:03<br>
+<br>
+<strong>
+                                                                                Ambiente de Produ��o -
+
+                                                                        Vers�o XML:
+                                                                        4.00
+                                                                        - Vers�o XSLT: 2.05
+                                                                </strong>
+</li>
+</ul>
+</div>
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-collapsed="false">
+<h4>Chave de acesso</h4>
+<ul data-role="listview" data-inset="false">
+<li>
+                                                                Consulte pela Chave de Acesso em
+
+                                                                http://www.sefaz.mt.gov.br/nfce/consultanfce<br>
+<br>
+<strong>Chave de acesso:</strong>
+<br>
+<span class="chave">5125 0306 0572 2305 5740 6501 9000 0234 6411 9032 8550</span>
+</li>
+</ul>
+</div>
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-collapsed="false">
+<h4>Consumidor</h4>
+<ul data-role="listview" data-inset="false">
+<li>
+<strong>CPF: </strong>034.630.081-90</li>
+<li>
+<strong>Nome: </strong>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+        </div>                
+    </body>
+</html>PASS
