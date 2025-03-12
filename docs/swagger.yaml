@@ -1,0 +1,45 @@
+definitions:
+  main.RequestData:
+    properties:
+      url:
+        description: URL to be fetched and processed.
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /log:
+    post:
+      consumes:
+      - application/json
+      description: Receives a URL, performs a GET request and extracts HTML info.
+      parameters:
+      - description: Request payload
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/main.RequestData'
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "405":
+          description: Method Not Allowed
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      summary: Log and extract info from URL
+      tags:
+      - log
+swagger: "2.0"
