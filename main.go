@@ -57,12 +57,16 @@ func logHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Utiliza a função de extração do package extractor para processar o HTML.
 	arr := extractorInstance.ExtractInfo(string(body))
-	for _, item := range arr {
-		fmt.Printf("TxtTit: %s, RCod: %s, Qtde: %.2f, Valor: %.2f, UN: %s \n", item.TxtTit, item.RCod, item.Qtde, item.Valor, item.Unit)
+	if len(arr) > 0 {
+		for _, item := range arr {
+			fmt.Printf("TxtTit: %s, RCod: %s, Qtde: %.2f, Valor: %.2f, UN: %s \n", item.TxtTit, item.RCod, item.Qtde, item.Valor, item.Unit)
+			w.WriteHeader(http.StatusNoContent)
+		}
+	} else {
+		// Retorna um status 204 No Content, pois nenhuma resposta ao cliente é necessária.
+		w.WriteHeader(http.StatusBadRequest)
 	}
 
-	// Retorna um status 204 No Content, pois nenhuma resposta ao cliente é necessária.
-	w.WriteHeader(http.StatusNoContent)
 }
 
 func main() {

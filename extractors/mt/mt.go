@@ -102,7 +102,6 @@ func (e *Extractor) ExtractInfo(htmlContent string) []models.Item {
 							uText := e.GetText(span) // Ex.: "UN: Kg"
 							uText = strings.TrimPrefix(uText, "UN:")
 							unit = strings.TrimSpace(uText)
-							fmt.Println("Unidade extraída:", unit)
 						}
 					}
 				}

@@ -1,37 +1,4 @@
-    open('/nfce/consultanfce?pagn=impressao&tagSolicitada=9&tpImp=DANFE', 'Resumo', 'top=0,left=0,width=760,height=600,scrollbars=1,resizable=1');
-          }
-          
-          function paginaInicial()
-          {
-              window.open('/nfce/consultanfce', '_self');
-          }
 
-          function desabilitaBotoes()
-          {
-              //Desabilitando bot�es, caso valida��o ocorra com sucesso
-              desabilitarBotoes(obterArrayBotoes(form));
-              return true;
-          }
-
-          function obterArrayBotoes(form)
-          {
-              //Obtendo os bot�es a serem desabilitados
-              var botao1 = form.bttnNovaConsulta;
-              var botao2 = form.bttnCancelar;
-              var botao3 = form.btnImpressaoUso;
-              var botao4 = form.bttnImprimir;
-              //Retorna um Array com os bot�es que devem ser desabilitados
-              return new Array(botao1, botao2, botao3, botao4);
-          }
-          window.onload = function ()
-          {
-              document.form.onsubmit = function ()
-              {
-                  desabilitaBotoes();
-              }
-          }
-        </script>
-    </head>
     <body>
         <form name='form' action='/nfce/consultanfce' method='POST'>
             <input type='hidden' name='ret' value='1'/>
@@ -39,7 +6,7 @@
             <div style="text-align:center; position: relative; display: block;z-index: 50;">
                 
                 <br/>
-                <div style="width: 100%!;(MISSING)">
+                <div style="width: 100%!">
                     <table class="SEFAZ-TABLE-Moldura" width="50%!"(MISSING) align="center" cellspacing="0" cellpadding="2px" border="0">
                         <tr class="SEFAZ-TR-SubTitulo" valign="middle">
                             <td align="left">
