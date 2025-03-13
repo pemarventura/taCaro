@@ -1,12 +1,17 @@
 {
     "swagger": "2.0",
     "info": {
-        "contact": {}
+        "description": "API que processa notas fiscais e extrai informações.",
+        "title": "taCaro Backend API",
+        "contact": {},
+        "version": "1.0"
     },
+    "host": "localhost:8080",
+    "basePath": "/api-v1",
     "paths": {
-        "/log": {
+        "/processarQRCode": {
             "post": {
-                "description": "Receives a URL, performs a GET request and extracts HTML info.",
+                "description": "Receives a URL!, performs a GET request and extracts HTML info.",
                 "consumes": [
                     "application/json"
                 ],
@@ -14,7 +19,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "log"
+                    "api-v1"
                 ],
                 "summary": "Log and extract info from URL",
                 "parameters": [
@@ -24,7 +29,7 @@
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/main.RequestData"
+                            "$ref": "#/definitions/models.RequestData"
                         }
                     }
                 ],
@@ -58,7 +63,7 @@
         }
     },
     "definitions": {
-        "main.RequestData": {
+        "models.RequestData": {
             "type": "object",
             "properties": {
                 "url": {

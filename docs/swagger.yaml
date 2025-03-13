@@ -1,25 +1,30 @@
+basePath: /api-v1
 definitions:
-  main.RequestData:
+  models.RequestData:
     properties:
       url:
         description: URL to be fetched and processed.
         type: string
     type: object
+host: localhost:8080
 info:
   contact: {}
+  description: API que processa notas fiscais e extrai informações.
+  title: taCaro Backend API
+  version: "1.0"
 paths:
-  /log:
+  /processarQRCode:
     post:
       consumes:
       - application/json
-      description: Receives a URL, performs a GET request and extracts HTML info.
+      description: Receives a URL!, performs a GET request and extracts HTML info.
       parameters:
       - description: Request payload
         in: body
         name: request
         required: true
         schema:
-          $ref: '#/definitions/main.RequestData'
+          $ref: '#/definitions/models.RequestData'
       produces:
       - application/json
       responses:
@@ -41,5 +46,5 @@ paths:
             type: string
       summary: Log and extract info from URL
       tags:
-      - log
+      - api-v1
 swagger: "2.0"

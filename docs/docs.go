@@ -15,9 +15,9 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/log": {
+        "/processarQRCode": {
             "post": {
-                "description": "Receives a URL, performs a GET request and extracts HTML info.",
+                "description": "Receives a URL!, performs a GET request and extracts HTML info.",
                 "consumes": [
                     "application/json"
                 ],
@@ -25,7 +25,7 @@ const docTemplate = `{
                     "application/json"
                 ],
                 "tags": [
-                    "log"
+                    "api-v1"
                 ],
                 "summary": "Log and extract info from URL",
                 "parameters": [
@@ -35,7 +35,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/main.RequestData"
+                            "$ref": "#/definitions/models.RequestData"
                         }
                     }
                 ],
@@ -69,7 +69,7 @@ const docTemplate = `{
         }
     },
     "definitions": {
-        "main.RequestData": {
+        "models.RequestData": {
             "type": "object",
             "properties": {
                 "url": {
@@ -83,12 +83,12 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "",
-	Host:             "",
-	BasePath:         "",
+	Version:          "1.0",
+	Host:             "localhost:8080",
+	BasePath:         "/api-v1",
 	Schemes:          []string{},
-	Title:            "",
-	Description:      "",
+	Title:            "taCaro Backend API",
+	Description:      "API que processa notas fiscais e extrai informações.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 }
