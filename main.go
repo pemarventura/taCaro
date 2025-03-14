@@ -9,11 +9,12 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
+
 	_ "taCaro-backend/docs" // Importa a documentação gerada pelo swag
 	"taCaro-backend/endpoints"
 
 	"github.com/gorilla/mux"
-
 	httpSwagger "github.com/swaggo/http-swagger"
 )
 
@@ -37,6 +38,12 @@ func main() {
 		http.Error(w, "Endereço não encontrado", http.StatusNotFound)
 	})
 
-	fmt.Println("Servidor rodando na porta 8080")
-	log.Fatal(http.ListenAndServe(":8080", router))
+	// Lê a variável de ambiente PORT
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080" // Valor padrão se não definido
+	}
+
+	fmt.Printf("Servidor rodando na porta %s\n", port)
+	log.Fatal(http.ListenAndServe(":"+port, router))
 }
