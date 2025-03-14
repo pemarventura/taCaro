@@ -1,17 +1,11 @@
-// @title taCaro Backend API
-// @version 1.0
-// @description API que processa notas fiscais e extrai informações.
-// @host localhost:8080
-// @BasePath /api-v1
 package main
 
 import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
-
-	_ "taCaro-backend/docs" // Importa a documentação gerada pelo swag
+	database "taCaro-backend/databases" // novo pacote criado
+	_ "taCaro-backend/docs"             // Documentação do swag
 	"taCaro-backend/endpoints"
 
 	"github.com/gorilla/mux"
@@ -19,6 +13,10 @@ import (
 )
 
 func main() {
+	if err := database.Connect("mongodb://pemar:123456@172.18.0.2:27017/?authSource=admin"); err != nil {
+		log.Fatal("Não foi possível estabelecer conexão com o MongoDB:", err)
+	}
+
 	// Cria um novo router com Gorilla Mux
 	router := mux.NewRouter()
 
@@ -38,12 +36,6 @@ func main() {
 		http.Error(w, "Endereço não encontrado", http.StatusNotFound)
 	})
 
-	// Lê a variável de ambiente PORT
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080" // Valor padrão se não definido
-	}
-
-	fmt.Printf("Servidor rodando na porta %s\n", port)
-	log.Fatal(http.ListenAndServe(":"+port, router))
+	fmt.Println("Servidor rodando na porta 9090")
+	log.Fatal(http.ListenAndServe(":9090", router))
 }
